@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.sysco.framework.TestNGCustom" />
+	</listeners>
+	<test name="Sysco careers">
+		<classes>
+			<class name="com.sysco.test.leadAutomationTestDeveloper">
+				<methods>
+					<include name="mikeDoe" />
+				</methods>
+			</class>
+			<class name="com.sysco.test.leadPerformanceTest_QA">
+				<methods>
+					<include name="susanDoe" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
